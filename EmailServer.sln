@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServer", "EmailServer\EmailServer.csproj", "{AAB16113-3DBA-405C-A409-55671C87E4AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmailProvider", "GmailProvider\GmailProvider.csproj", "{87A01C3B-8EFA-478B-92E0-40893693F347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{67292E3E-8F8D-4CF6-B3D4-FF47BBAB111D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,12 @@ Global
 		{AAB16113-3DBA-405C-A409-55671C87E4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB16113-3DBA-405C-A409-55671C87E4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAB16113-3DBA-405C-A409-55671C87E4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A01C3B-8EFA-478B-92E0-40893693F347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A01C3B-8EFA-478B-92E0-40893693F347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A01C3B-8EFA-478B-92E0-40893693F347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A01C3B-8EFA-478B-92E0-40893693F347}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87A01C3B-8EFA-478B-92E0-40893693F347} = {67292E3E-8F8D-4CF6-B3D4-FF47BBAB111D}
 	EndGlobalSection
 EndGlobal
