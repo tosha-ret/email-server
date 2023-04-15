@@ -1,14 +1,29 @@
-﻿using GmailAPIHelper;
+﻿using Google.Apis.Gmail.v1;
+using Google.Apis.Gmail.v1.Data;
+using Google.Apis.Services;
 
 namespace GmailProvider;
 
 public sealed class Sender
 {
-    public void Send(TextEmail email)
+    public async Task SendAsync(TextEmail email, CancellationToken token)
     {
-        var service = GmailHelper.GetGmailService("EmailServer");
+        var auth = new Auth();
+        var configurableHttpClientInitializer = await auth.GetCredentialAsync(token);
+        var gmailService = new GmailService(new BaseClientService.Initializer
+        {
+            HttpClientInitializer = configurableHttpClientInitializer,
+            ApplicationName = "EmailServer"
+        });
 
-        service.SendMessage(GmailHelper.EmailContentType.PLAIN, email.Addresee, subject: email.Subject,
-            body: email.Message);
+
+        gmailService.Users.Messages.Send(new Message
+        {
+            Payload = new MessagePart
+            {
+                Body = new MessagePartBody
+                    { Data = email.Message }
+            }
+        }, "me");
     }
 }

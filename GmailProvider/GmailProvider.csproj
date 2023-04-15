@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="GmailHelper" Version="1.8.10" />
+      <PackageReference Include="Google.Apis.Gmail.v1" Version="1.60.0.3014" />
       <PackageReference Include="System.IO.Abstractions" Version="19.2.4" />
     </ItemGroup>
 

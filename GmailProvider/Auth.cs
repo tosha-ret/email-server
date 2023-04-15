@@ -1,22 +1,22 @@
-using System.IO.Abstractions;
-using GmailAPIHelper;
+using Google.Apis.Auth.OAuth2;
 using Google.Apis.Gmail.v1;
+using Google.Apis.Util.Store;
 
 namespace GmailProvider;
 
 public sealed class Auth
 {
-    private readonly IFileSystem _fileSystem;
-
-    public Auth(IFileSystem fileSystem)
+    public async Task<UserCredential> GetCredentialAsync(CancellationToken token)
     {
-        _fileSystem = fileSystem;
-    }
+        await using var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read);
 
-    public GmailService CreateToken()
-    {
-        return GmailHelper.GetGmailService("EmailServer",
-            tokenPath: _fileSystem.Path.Combine(_fileSystem.Directory.GetCurrentDirectory(),
-                "wrealle_gmail_provider_token.json"));
+        var googleClientSecrets = await GoogleClientSecrets.FromStreamAsync(stream, token);
+        
+        
+
+        return await GoogleWebAuthorizationBroker.AuthorizeAsync(
+            googleClientSecrets.Secrets,
+            new[] { GmailService.Scope.GmailSend },
+            "tosharet@gmail.com", token, new FileDataStore("Emails.Wrealle"));
     }
 }
