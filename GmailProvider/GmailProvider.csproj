@@ -8,9 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Google.Apis.Gmail.v1" Version="1.60.0.3014" />
+      <PackageReference Include="Google.Apis.Gmail.v1" Version="1.64.0.3231" />
       <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
-      <PackageReference Include="System.IO.Abstractions" Version="19.2.4" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EmailServer.Application\EmailServer.Application.csproj" />
     </ItemGroup>
 
 </Project>

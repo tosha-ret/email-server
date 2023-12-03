@@ -1,4 +1,4 @@
-namespace GmailProvider;
+namespace EmailServer.Application;
 
 /// <summary>
 ///     Контракт для реализации получения писем

@@ -1,9 +1,10 @@
 ﻿using System.Net;
 using System.Net.Mail;
+using EmailServer.Application;
 using GmailProvider.Options;
 using Microsoft.Extensions.Options;
 
-namespace GmailProvider;
+namespace GmailProvider.Senders;
 
 /// <inheritdoc />
 public sealed class TextSender : ISender<TextEmail>

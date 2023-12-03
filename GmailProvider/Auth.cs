@@ -16,7 +16,7 @@ public sealed class Auth
 
         return await GoogleWebAuthorizationBroker.AuthorizeAsync(
             googleClientSecrets.Secrets,
-            new[] { GmailService.Scope.GmailSend },
+            new[] { GmailService.Scope.GmailReadonly },
             "tosharet@gmail.com", token, new FileDataStore("Emails.Wrealle"));
     }
 }

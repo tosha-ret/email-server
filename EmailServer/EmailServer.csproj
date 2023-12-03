@@ -12,12 +12,15 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
-      <Content Remove="wrealle_gmail_client_secret.json" />
-      <Content Remove="credentials.json" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\EmailServer.Application\EmailServer.Application.csproj" />
       <ProjectReference Include="..\GmailProvider\GmailProvider.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.IO.Abstractions" Version="19.2.87" />
     </ItemGroup>
 
 </Project>
