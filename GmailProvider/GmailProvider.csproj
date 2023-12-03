@@ -4,10 +4,12 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Google.Apis.Gmail.v1" Version="1.60.0.3014" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
       <PackageReference Include="System.IO.Abstractions" Version="19.2.4" />
     </ItemGroup>
 
