@@ -8,9 +8,9 @@ namespace GmailProvider.Senders;
 /// <inheritdoc />
 public sealed class SenderMeteringToPek : ISenderMeteringToPek
 {
-    private readonly ISender<TextEmail> _sender;
-
     private readonly PekEmailOptions _pekEmailOptions;
+
+    private readonly ISender<TextEmail> _sender;
 
     /// <summary>
     ///     Инициализирует класс <see cref="SenderMeteringToPek" />
@@ -52,8 +52,6 @@ public sealed class SenderMeteringToPek : ISenderMeteringToPek
             $"{Environment.NewLine}" +
             $"{sign}";
 
-
-        // var email = new TextEmail("info@ooopek.com", subject, text);
         var email = new TextEmail(_pekEmailOptions.Addressee, subject, text);
 
         return _sender.SendAsync(email, token);
