@@ -34,7 +34,7 @@ app.MapGet("/authorize", () => "Удача!");
 app.MapGet("/send-test", ([FromServices] ISender<TextEmail> sender, CancellationToken token) => sender.SendAsync(
     new TextEmail("tosha_retivykh@mail.ru", "test from my api5", "тестовый текст5"), token));
 
-//app.MapPost("/send-pek-metering", ([FromServices] ISenderMeteringToPek sender, [FromBody] Metering metering, CancellationToken token) => sender.SendAsync(metering, token));
+app.MapPost("/send-pek-metering", ([FromServices] ISenderMeteringToPek sender, [FromBody] Metering metering, CancellationToken token) => sender.SendAsync(metering, token));
 
 // app.MapGet("/get-test", ([FromServices] IEmailSubjectConsumer consumer, CancellationToken token) => consumer.GetEmailsAsync(token));
 

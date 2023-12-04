@@ -1,4 +1,5 @@
 using EmailServer.Application;
+using EmailServer.Application.PekMetering;
 using GmailProvider.Consumers;
 using GmailProvider.Options;
 using GmailProvider.Senders;
@@ -23,8 +24,10 @@ public static class GmailProviderRegistrationExtensions
     {
         return services
             .Configure<GmailOptions>(configuration.GetSection(nameof(GmailOptions)))
+            .Configure<PekEmailOptions>(configuration.GetSection(nameof(PekEmailOptions)))
             .AddSingleton<ISender<TextEmail>, TextSender>()
             .AddScoped<IRequestHandler<EmailConsumerRequest, IList<Message>>, GmailEmailConsumer>()
-            .AddScoped<IEmailSubjectConsumer, EmailSubjectConsumer>();
+            .AddScoped<IEmailSubjectConsumer, EmailSubjectConsumer>()
+            .AddScoped<ISenderMeteringToPek, SenderMeteringToPek>();
     }
 }

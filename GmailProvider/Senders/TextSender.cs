@@ -26,8 +26,8 @@ public sealed class TextSender : ISender<TextEmail>
     /// <inheritdoc />
     public Task SendAsync(TextEmail email, CancellationToken token)
     {
-        using var message = new MailMessage(_sender.Address, email.Addresee, email.Subject, email.Message);
-
+        using var message = new MailMessage(_sender.Address, email.Addressee, email.Subject, email.Message);
+        
         using var client = new SmtpClient(_client.Host, _client.Port);
 
         client.EnableSsl = _client.EnableSsl;
