@@ -3,22 +3,22 @@ namespace EmailServer.Application.PekMetering;
 /// <summary>
 /// Показания приборов учета
 /// </summary>
-public class Metering
+public class MeteringView
 {
     /// <summary>
-    ///     Инициализирует новый экземпляр <see cref="Metering" />
+    ///     Инициализирует новый экземпляр <see cref="MeteringView" />
     /// </summary>
     /// <param name="period"></param>
     /// <param name="oldMeters"></param>
     /// <param name="newMeters"></param>
-    public Metering(Period period, Meters oldMeters, Meters newMeters)
+    public MeteringView(Period period, Meters oldMeters, Meters newMeters)
     {
         Period = period;
         OldMeters = oldMeters;
         NewMeters = newMeters;
     }
 
-    /// Период, закоторый подаются показания
+    /// Период, за который подаются показания
     public Period Period { get; private set; }
 
     /// Показания предыдущего периода

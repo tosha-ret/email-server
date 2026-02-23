@@ -1,0 +1,39 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+        <CoreVersion>10.0.41</CoreVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!--Тесты -->
+        <PackageVersion Include="AwesomeAssertions" Version="9.4.0"/>
+        <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1"/>
+        <PackageVersion Include="xunit" Version="2.9.3"/>
+        <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" PrivateAssets="All"/>
+        <PackageVersion Include="coverlet.collector" Version="6.0.4" PrivateAssets="All"/>
+        <PackageVersion Include="coverlet.msbuild" Version="6.0.4" PrivateAssets="All"/>
+        <PackageVersion Include="JunitXml.TestLogger" Version="8.0.0"/>
+
+        <!--Анализаторы-->
+        <PackageVersion Include="stbychkov.AutoLoggerMessage" Version="1.0.15"/>
+        <PackageReference Include="stbychkov.AutoLoggerMessage"/>
+        <PackageVersion Include="JetBrains.Annotations" Version="2025.2.4" />
+        <PackageReference Include="JetBrains.Annotations" />
+        <PackageVersion Include="TestableIO.System.IO.Abstractions.Analyzers" Version="2022.0.0" />
+        <PackageReference Include="TestableIO.System.IO.Abstractions.Analyzers">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+
+		<!--Дополнительные пакеты-->
+		<PackageVersion Include="Swashbuckle.AspNetCore" Version="10.1.4"/>
+		<PackageVersion Include="System.IO.Abstractions" Version="22.1.0"/>
+		<PackageVersion Include="Google.Apis.Gmail.v1" Version="1.73.0.4029"/>
+		<PackageVersion Include="Microsoft.Extensions.Options" Version="10.0.3"/>
+		<PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.3"/>
+		<PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.3"/>
+    </ItemGroup>
+
+    <Import Project="ReoCore.props"/>
+</Project>

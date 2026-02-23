@@ -1,0 +1,54 @@
+<Project>
+    <ItemGroup>
+        <PackageReference Include="Reo.Core.Analyzers" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive"/>
+        <PackageVersion Include="Reo.Core.Analyzers" Version="$(CoreVersion)"/>
+        <PackageVersion Include="Reo.Core.Analytics" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Annotations" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.ApiDocumentation" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Application.Abstractions.MediatR" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.AsyncOperations" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Auth" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.BaseClient" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.BaseDomainModels.MediatR" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.CodeConventions" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.CodeGenerator" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.CodeGeneratorTesting" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.ConfigValidation" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Database" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Database.Abstractions" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Database.IntegrationTests" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.DataImport" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.DataModels" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.DistributedCache" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.DistributedCache.Abstractions" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Elastic" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Elastic.Geo" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Elastic.IntegrationTests" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Extensions" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.ExternalReference" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.FrontConstants" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.GeoJSON" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.HealthCheck" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Hosting" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.IdentityModel" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Infrastructure.Abstractions" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.IntegrationTesting" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Logging" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.MemoryCache" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.MemoryCache.IntegrationTests" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.MongoDB" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.PredicateBuilder" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.PredicateBuilder.CodeGeneration" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Queue.Abstractions" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Queue.MassTransit.Abstractions" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Queue.MassTransit.Models" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Report.ClosedXml" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Reports" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Serilog.Sinks.XunitTestOutput" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.TestCaseCollector" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.TestCaseCollector.CodeGeneration" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Testing" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Validation" Version="$(CoreVersion)" />
+        <PackageVersion Include="Reo.Core.Xunit.IntegrationTesting" Version="$(CoreVersion)" />
+    </ItemGroup>
+</Project>

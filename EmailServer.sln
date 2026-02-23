@@ -10,6 +10,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServer.Application", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServer.Application.Tests", "EmailServer.Application.Tests\EmailServer.Application.Tests.csproj", "{61E03EC6-4162-488C-9DC9-0551665B2571}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServer.Postgres", "EmailServer.Postgres\EmailServer.Postgres.csproj", "{2D978328-3114-40F1-8C57-CC2BA8DEF090}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!SolutionFolder", "!SolutionFolder", "{A6FD7CC5-7CDD-4D6E-A1C4-0D13D3049DBD}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+		ReoCore.props = ReoCore.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServer.Domain", "EmailServer.Domain\EmailServer.Domain.csproj", "{48E75E59-19E1-4088-8E55-7DEB5351AE67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +42,14 @@ Global
 		{61E03EC6-4162-488C-9DC9-0551665B2571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61E03EC6-4162-488C-9DC9-0551665B2571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61E03EC6-4162-488C-9DC9-0551665B2571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D978328-3114-40F1-8C57-CC2BA8DEF090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D978328-3114-40F1-8C57-CC2BA8DEF090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D978328-3114-40F1-8C57-CC2BA8DEF090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D978328-3114-40F1-8C57-CC2BA8DEF090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E75E59-19E1-4088-8E55-7DEB5351AE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E75E59-19E1-4088-8E55-7DEB5351AE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E75E59-19E1-4088-8E55-7DEB5351AE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E75E59-19E1-4088-8E55-7DEB5351AE67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{87A01C3B-8EFA-478B-92E0-40893693F347} = {67292E3E-8F8D-4CF6-B3D4-FF47BBAB111D}

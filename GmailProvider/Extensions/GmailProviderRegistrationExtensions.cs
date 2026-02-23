@@ -28,6 +28,6 @@ public static class GmailProviderRegistrationExtensions
             .AddSingleton<ISender<TextEmail>, TextSender>()
             .AddScoped<IRequestHandler<EmailConsumerRequest, IList<Message>>, GmailEmailConsumer>()
             .AddScoped<IEmailSubjectConsumer, EmailSubjectConsumer>()
-            .AddScoped<ISenderMeteringToPek, SenderMeteringToPek>();
+            .AddScoped<IMeteringSender, PekMeteringSender>();
     }
 }

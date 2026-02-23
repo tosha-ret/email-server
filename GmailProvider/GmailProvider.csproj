@@ -1,16 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Google.Apis.Gmail.v1" Version="1.64.0.3231" />
-      <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
-      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+      <PackageReference Include="Google.Apis.Gmail.v1" />
+      <PackageReference Include="Microsoft.Extensions.Options" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
     </ItemGroup>
 
     <ItemGroup>

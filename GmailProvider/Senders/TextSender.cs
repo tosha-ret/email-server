@@ -14,7 +14,7 @@ public sealed class TextSender : ISender<TextEmail>
     private readonly SenderOptions _sender;
 
     /// <summary>
-    ///     Инициализирует класс <see cref="TextSender" />
+    /// Инициализирует класс <see cref="TextSender" />
     /// </summary>
     /// <param name="gmailOptions"></param>
     public TextSender(IOptions<GmailOptions> gmailOptions)
@@ -27,7 +27,7 @@ public sealed class TextSender : ISender<TextEmail>
     public Task SendAsync(TextEmail email, CancellationToken token)
     {
         using var message = new MailMessage(_sender.Address, email.Addressee, email.Subject, email.Message);
-        
+
         using var client = new SmtpClient(_client.Host, _client.Port);
 
         client.EnableSsl = _client.EnableSsl;

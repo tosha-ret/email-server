@@ -1,5 +1,5 @@
+using AwesomeAssertions;
 using EmailServer.Application.PekMetering;
-using FluentAssertions;
 
 namespace EmailServer.Application.Tests;
 

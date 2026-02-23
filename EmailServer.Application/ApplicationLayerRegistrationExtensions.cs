@@ -1,3 +1,4 @@
+using EmailServer.Application.PekMetering;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EmailServer.Application;
@@ -14,6 +15,6 @@ public static class ApplicationLayerRegistrationExtensions
     /// <returns> Возвращает DI с добавленными сервисами</returns>
     public static IServiceCollection AddApplicationLayer(this IServiceCollection services)
     {
-        return services;
+		return services.AddScoped<IMeteringService, PekMeteringService>();
     }
 }
