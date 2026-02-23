@@ -6,7 +6,11 @@ public sealed class MeteringEntity
 
 	public required Guid ProviderId { get; set; }
 
-	public required DateTime SendingDate { get; set; }
+	public required DateTime CreateDate { get; set; }
+
+	public required int ReportYear { get; set; }
+
+	public required int ReportMonth { get; set; }
 
 	public required decimal HotWater { get; set; }
 

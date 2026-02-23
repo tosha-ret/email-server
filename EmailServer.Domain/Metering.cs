@@ -6,12 +6,14 @@ public class Metering
 		decimal hotWater,
 		decimal coldWater,
 		decimal electricity,
-		DateTime? sendingDate)
+		Period reportPeriod,
+		DateTime? createDate)
 	{
 		HotWater = hotWater;
 		ColdWater = coldWater;
 		Electricity = electricity;
-		SendingDate = sendingDate;
+		ReportPeriod = reportPeriod;
+		CreateDate = createDate;
 	}
 
 	/// <summary>
@@ -32,15 +34,23 @@ public class Metering
 	/// <summary>
 	/// Дата отправки значений
 	/// </summary>
-	public DateTime? SendingDate { get; private set; }
+	public DateTime? CreateDate { get; private set; }
+
+	/// <summary>
+	/// Отчётный период
+	/// </summary>
+	public Period ReportPeriod { get; private set; }
 
 	public static Metering Create(
 		decimal hotWater,
 		decimal coldWater,
-		decimal electricity) => new(hotWater, coldWater, electricity, null);
+		decimal electricity,
+		Period reportPeriod) => new(hotWater, coldWater, electricity, reportPeriod, null);
 
-	public static Metering Restore(decimal hotWater,
-									decimal coldWater,
-									decimal electricity,
-									DateTime sendingDate) => new(hotWater, coldWater, electricity, sendingDate);
+	public static Metering Restore(
+		decimal hotWater,
+		decimal coldWater,
+		decimal electricity,
+		Period reportPeriod,
+		DateTime sendingDate) => new(hotWater, coldWater, electricity, reportPeriod, sendingDate);
 }

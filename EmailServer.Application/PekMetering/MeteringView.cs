@@ -1,3 +1,5 @@
+using EmailServer.Domain;
+
 namespace EmailServer.Application.PekMetering;
 
 /// <summary>

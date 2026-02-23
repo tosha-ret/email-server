@@ -36,7 +36,7 @@ public class PekMeteringRepository(
 
 		return await context.Meterings
 			.Where(predicate.Build())
-			.OrderByDescending(x => x.SendingDate)
+			.OrderByDescending(x => x.CreateDate)
 			.FirstOrDefaultAsync(token)
 			.ThenAsync(entity => entity?.ToDomain());
 	}

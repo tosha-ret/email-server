@@ -1,4 +1,4 @@
-namespace EmailServer.Application.PekMetering;
+namespace EmailServer.Domain;
 
 /// <summary>
 /// Период для отправки показаний
