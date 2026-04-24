@@ -1,5 +1,5 @@
 using EmailServer.Application;
-using EmailServer.Application.PekMetering;
+using EmailServer.Application.Common;
 using GmailProvider.Consumers;
 using GmailProvider.Options;
 using GmailProvider.Senders;

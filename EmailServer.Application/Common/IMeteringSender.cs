@@ -1,4 +1,6 @@
-namespace EmailServer.Application.PekMetering;
+using EmailServer.Application.Common.Models;
+
+namespace EmailServer.Application.Common;
 
 /// <summary>
 /// Сервис для отправки показаний приборов учета в УК ПЭК
@@ -10,6 +12,5 @@ public interface IMeteringSender
     /// </summary>
     /// <param name="meteringView">Показания</param>
     /// <param name="token">Токен отмены</param>
-    /// <returns></returns>
     Task SendAsync(MeteringView meteringView,  CancellationToken token);
 }

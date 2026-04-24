@@ -8,7 +8,7 @@ namespace EmailServer.Application;
 public interface IRequestHandler<TRequest, TResponse>
 {
     /// <summary>
-    ///     Отправляет запрс <see cref="TRequest" /> на обработку писем
+    ///     Отправляет запрос <see cref="TRequest" /> на обработку писем
     /// </summary>
     /// <param name="request"> Параметры запроса к почтовому сервису </param>
     /// <param name="token"> Токен отмены </param>

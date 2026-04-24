@@ -1,4 +1,5 @@
-using EmailServer.Application.PekMetering;
+using EmailServer.Application.Common;
+using EmailServer.Application.Providers.Pek;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EmailServer.Application;

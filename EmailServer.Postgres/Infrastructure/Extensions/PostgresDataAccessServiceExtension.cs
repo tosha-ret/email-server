@@ -25,5 +25,5 @@ public static class PostgresDataAccessServiceExtension
 		.AddReoTime();
 
 	private static IServiceCollection AddRepositories(this IServiceCollection services) => services
-		.AddScoped<IMeteringRepository, PekMeteringRepository>();
+		.AddScoped<IMeteringRepository, MeteringRepository>();
 }

@@ -1,8 +1,12 @@
-bin/
-obj/
+*/bin/
+*/obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
 /client_secrets.json
 /*.DotSettings.user
 .idea
+EmailServer/bin
+EmailServer/obj
+EmailServer.Postgres/bin
+EmailServer.Postgres/obj

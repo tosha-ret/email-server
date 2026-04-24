@@ -1,4 +1,4 @@
-namespace EmailServer.Application.PekMetering;
+namespace EmailServer.Application.Common.Models;
 
 /// <summary>
 /// Модель показаний индивидуальных приборов учёта
