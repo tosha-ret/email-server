@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!SolutionFolder", "!Solutio
 	ProjectSection(SolutionItems) = preProject
 		Directory.Packages.props = Directory.Packages.props
 		ReoCore.props = ReoCore.props
+		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServer.Domain", "EmailServer.Domain\EmailServer.Domain.csproj", "{48E75E59-19E1-4088-8E55-7DEB5351AE67}"
